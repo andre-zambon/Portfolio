@@ -1,0 +1,35 @@
+.formacao {
+    background-color: var(--fundo-azul);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+
+.container {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+}
+
+.rotulo {
+    margin: 0.75rem 0;
+}
+
+.container--ifes::before {
+    content: url(/assets/img/ifes-logo.svg);
+    text-align: center;
+    padding: 5rem 1rem
+}
+
+.container--unip {
+    content: url(/assets/img/unip-logo.png);
+    text-align: center;
+}
+
+.container--alura::before {
+    content: url(/assets/img/logo-alura.svg);
+    text-align: center;
+    padding: 6rem 1rem;
+}

@@ -1,0 +1,8 @@
+.sobre {
+    background-color: var(--fundo-azul);
+    padding: 1rem;
+}
+
+.titulo--alinhado {
+    text-align: left;
+}

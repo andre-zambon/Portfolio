@@ -9,32 +9,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/cabecalho.css">
+    <link rel="stylesheet" href="assets/css/apresentacao.css">
+    <link rel="stylesheet" href="assets/css/sobre.css">
+    <link rel="stylesheet" href="assets/css/skills.css">
+    <link rel="stylesheet" href="assets/css/hobbies.css">
+    <link rel="stylesheet" href="assets/css/formacao.css">
+    <link rel="stylesheet" href="/assets/css/experiencias.css">
+    <link rel="stylesheet" href="/assets/css/contato.css">
 </head>
 <body>
     <header class="cabecalho">
-        <p class="menu__perfil">André Zambon</p>
-        <nav class="menu menu__mobile">
+        <p class="cabecalho__perfil">André Zambon</p>
+        <!-- <nav class="menu menu__mobile">
             <a href="#sobre" class="menu__link">Sobre mim</a>
             <a href="#skills" class="menu__link">Skills</a>
             <a href="#hobbies" class="menu__link">Hobbies</a>
             <a href="#formacao" class="menu__link">Formação</a>
             <a href="#projetos" class="menu__link">Projetos</a>
-        </nav>
-        <p class="menu__contato">andre-zambon@hotmail.com</p>
+        </nav> -->
+        <p class="cabecalho__contato">andre-zambon@hotmail.com</p>
     </header>    
 
     <section class="apresentacao">
-        <img src="" class="apresentacao__foto-perfil" alt="Foto do André. Homem branco, de barbar escura e cabelo curto">
-        <h1 class="titulo-secao">Olá, meu nome é Enaldo André Zambon (pode me chamar de André) e construo páginas web</h1>
+        <img src="/assets/img/foto-perfil.jpeg" class="apresentacao__foto-perfil" alt="Foto do André. Homem branco, de barbar escura e cabelo curto">
+        <h1 class="titulo-secao titulo--alinhado">Olá, meu nome é Enaldo André Zambon e construo páginas web</h1>
         <p class="descricao">Sou brasileiro, tenho 34 anos. Sou formado em Processos Gerenciais e atualmente estou participando no projeto Oracle ONE na Alura.</p>
         <div class="apresentacao__redes-sociais">
-            <a href="">GitHub</a><a href="">LinkedIn</a><a href="">Instagram</a><a href="">Currículo</a>
+            <a href="" class="link link-apresentacao">GitHub</a><a href="" class="link link-apresentacao">LinkedIn</a><a href="" class="link link-apresentacao">Instagram</a><a href="" class="link link-apresentacao">Currículo</a>
         </div>
     </section>
 
     <section class="sobre">
-        <h2 class="titulo-secao">Sobre mim</h2>
+        <h2 class="titulo-secao titulo--alinhado">Sobre mim</h2>
         <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus.
             Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. 
@@ -46,49 +54,45 @@
 
     <section class="skills">
         <h2 class="titulo-secao">Skills</h2>
-        <div class="cantainer">
-            <p class="rotulo">HTML5</p>
-        </div>
-        <div class="cantainer">
-            <p class="rotulo">Javascript</p>
-        </div>
-        <div class="cantainer">
-            <p class="rotulo">CSS</p>
-        </div>
-        <div class="cantainer">
-            <p class="rotulo">React</p>
-        </div>
+
+        <ul class="skills__lista">
+            <li class="rotulo rotulo-html skills__item">HTML5</li>
+            <li class="rotulo rotulo-javascript skills__item">Javascript</li>
+            <li class="rotulo rotulo-css skills__item">CSS</li>
+            <li class="rotulo rotulo-react skills__item">React</li>
+        </ul>
+
     </section>
 
     <section class="hobbies">
         <h2 class="titulo-secao">Hobbies</h2>
-        <div class="cantainer">
-            <p class="rotulo">Trabalhos manuais</p>
-        </div>
-        <div class="cantainer">
-            <p class="rotulo">Ouvir música</p>
-        </div>
-        <div class="cantainer">
-            <p class="rotulo">Assistir filmes</p>
-        </div>
-        <div class="cantainer">
-            <p class="rotulo">Jardinagem</p>
-        </div>
+       
+        <ul class="hobbies__lista">
+            <li class="rotulo rotulo-trabalhos-manuais hobbies__item">Trabalhos manuais</li>
+            <li class="rotulo rotulo-ouvir-musica hobbies__item">Ouvir música</li>
+            <li class="rotulo rotulo-assistir-filme hobbies__item">Assitir filmes</li>
+            <li class="rotulo rotulo-jardinagem hobbies__item">Jardinagem</li>
+        </ul>
+
     </section>
 
     <section class="formacao">
-        <div class="container">
-            <p class="rotulo">Técnico em administração</p>
-            <p class="rotulo-descricao">ano - IFES</p>
+        <h2 class="titulo-secao">Formação acadêmica</h2>
+        
+        <div class="container container--ifes">
         </div>
-        <div class="container">
-            <p class="rotulo">Tecnólogo em Processos Gerenciais</p>
-            <p class="rotulo-descricao">ano - UNIP</p>
+        <p class="rotulo rotulo--ifes">Técnico em administração</p>
+        <p class="rotulo-descricao">ano - IFES</p>
+        
+        <div class="container container--unip">
         </div>
-        <div class="container">
-            <p class="rotulo">Formação Front-End</p>
-            <p class="rotulo-descricao">2022 - Alura</p>
+        <p class="rotulo">Tecnólogo em Processos Gerenciais</p>
+        <p class="rotulo-descricao">ano - UNIP</p>
+        
+        <div class="container container--alura">
         </div>
+        <p class="rotulo">Formação Front-End</p>
+        <p class="rotulo-descricao">2022 - Alura</p>
     </section>
 
     <section class="experiencias">
@@ -116,8 +120,8 @@
     </section>
    
     <section class="contato">
-        <h2 class="titulo">Contato</h2>
-        <p class="descricao">Quer entrar em contato comigo?
+        <h2 class="titulo-secao">Contato</h2>
+        <p class="rotulo">Quer entrar em contato comigo?
             Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
         <form action="">
             <div>

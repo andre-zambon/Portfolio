@@ -1,0 +1,39 @@
+:root {
+    --fonte-pricipal: 'Raleway';
+    --preto-titulos: #464646;
+    --fundo-cinza: #F5F5F5;
+    --preto-descricao: #464646;
+    --fundo-azul: #EAF2FD
+
+}
+
+body {
+    font-family: var(--fonte-pricipal);
+}
+
+.titulo-secao {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--preto-titulos);
+    line-height: 26px;
+    text-align: center;
+}
+
+.descricao {
+    font-size: 0.875;
+    color: var(--preto-descricao);
+    margin: 1rem 0;
+    line-height: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--preto-descricao);
+}
+
+.rotulo {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--preto-titulos);
+}
+

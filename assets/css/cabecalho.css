@@ -1,0 +1,29 @@
+.cabecalho {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+}
+
+.cabecalho__perfil::before{
+    content: url(/assets/img/logo.svg);
+    
+    display: inline-block;
+    width: 16%;
+    vertical-align: sub;
+}
+
+.cabecalho__perfil {
+    color: var(--preto-titulos);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 19px;
+}
+
+.cabecalho__contato {
+    color: var(--preto--titulos);
+    font-size: 0.875rem;
+
+}

@@ -1,0 +1,42 @@
+.hobbies {
+    background-color: var(--fundo-cinza);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.hobbies__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.hobbies__item {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+    padding-left: 1rem;
+}
+
+/* .rotulo-trabalhos-manuais {
+    content: ;
+} */
+
+.rotulo-ouvir-musica::before {
+    content: url(/assets/img/fone.svg);
+    margin-bottom: 1rem;
+}
+
+.rotulo-assistir-filme::before {
+    content: url(/assets/img/tv.svg);
+    margin-bottom: 1rem;
+}
+
+/* .rotulo-jardinagem {
+    content: ;
+} */
