@@ -1,8 +1,9 @@
 .sobre {
     background-color: var(--fundo-azul);
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
-.titulo--alinhado {
-    text-align: left;
-}
+
+

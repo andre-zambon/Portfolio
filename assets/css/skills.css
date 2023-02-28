@@ -9,15 +9,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 1rem;
 }
 
 .skills__item {
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    width: 40%;
-    margin-bottom: 1rem;
+    width: 43%;
+    margin-top: 1rem;
     padding-bottom: 1rem;
     padding-top: 3rem;
     padding-left: 1rem;

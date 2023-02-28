@@ -10,11 +10,8 @@
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    margin: 0 2rem;
-}
-
-.rotulo {
-    margin: 0.75rem 0;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
 }
 
 .container--ifes::before {

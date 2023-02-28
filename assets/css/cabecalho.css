@@ -9,7 +9,7 @@
 
 .cabecalho__perfil::before{
     content: url(/assets/img/logo.svg);
-    
+    margin-right: 5px;
     display: inline-block;
     width: 16%;
     vertical-align: sub;
@@ -24,6 +24,6 @@
 
 .cabecalho__contato {
     color: var(--preto--titulos);
-    font-size: 0.875rem;
+    font-size: 0.8rem;
 
 }

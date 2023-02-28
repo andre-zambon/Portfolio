@@ -1,4 +1,53 @@
 .contato {
     background-color: var(--fundo-azul);
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
+
 }
+
+.rotulo--normal {
+    line-height: 18px;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.container--campo-rodape {
+    margin: 1rem 0;
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 1px var(--borda-input);
+}
+
+.input--contato {
+    border: none;
+    padding: 0.25rem 0;
+}
+
+.input--contato::placeholder {
+    font-family: 'Raleway';
+}
+
+.input--contato:focus {
+    border: none;
+    border-bottom: 2px solid var(--borda-input-ativo);
+    outline: none;
+}
+
+.rotulo--input {
+    font-size: 12px;
+    color: var(--rotulo-input);
+}
+
+.formulario__botao {
+    border: none;
+    background-color: var(--botao-azul);
+    color: #FFFFFF;
+    font-weight: 600;
+    font-family: 'Raleway';
+    padding: 1rem;
+    
+
+}
+
+

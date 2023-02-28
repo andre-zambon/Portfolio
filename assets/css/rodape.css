@@ -1,0 +1,9 @@
+.rodape {
+    padding: 3rem 1rem;
+}
+
+.texto-rodape {
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+}

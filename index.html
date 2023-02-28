@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/formacao.css">
     <link rel="stylesheet" href="/assets/css/experiencias.css">
     <link rel="stylesheet" href="/assets/css/contato.css">
+    <link rel="stylesheet" href="/assets/css/rodape.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -121,33 +122,33 @@
    
     <section class="contato">
         <h2 class="titulo-secao">Contato</h2>
-        <p class="rotulo">Quer entrar em contato comigo?
+        <p class="rotulo rotulo--normal">Quer entrar em contato comigo?
             Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
-        <form action="">
-            <div>
-                <label for="name">Nome</label>
-                <input type="text" id=name required>
+        <form action="" class="contato__formulario">
+            <div class="container container--campo-rodape">
+                <label for="name" class="rotulo--input">Nome</label>
+                <input type="text" class="input--contato" id=name required>
             </div>
 
-            <div>
-                <label for="email">E-mail</label>
-                <input type="email" id="email">
+            <div class="container container--campo-rodape">
+                <label for="email" class="rotulo--input">E-mail</label>
+                <input type="email" class="input--contato" id="email" required>
             </div>
 
-            <div>
-                <textarea id="assunto" placeholder="Assunto"></textarea>
+            <div class="container container--campo-rodape">
+                <textarea id="assunto"class="input--contato" placeholder="Assunto" required></textarea>
             </div>
 
-            <div>
-                <textarea id="mensagem" placeholder="Mensagem"></textarea>
+            <div class="container container--campo-rodape">
+                <textarea id="mensagem" class="input--contato" placeholder="Mensagem" required></textarea>
             </div>
 
-            <button type="submit">Enviar Mensagem</button>
+            <button type="submit" class="formulario__botao">Enviar Mensagem</button>
 
         </form>
     </section>
 
-    <footer>
+    <footer class="rodape">
         <p class="texto-rodape">Desenvolvido por André Zambon</p>
         <p class="texto-rodape">2023</p>
     </footer>
