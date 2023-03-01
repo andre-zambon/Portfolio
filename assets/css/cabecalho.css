@@ -27,3 +27,13 @@
     font-size: 0.8rem;
 
 }
+
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        padding: 1rem 3rem;
+    }
+
+    .cabecalho__contato {
+        font-size: 1rem;
+    }
+}

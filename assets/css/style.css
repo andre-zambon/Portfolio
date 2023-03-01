@@ -37,6 +37,8 @@ body {
     font-weight: 700;
     color: var(--preto-titulos);
     line-height: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .descricao {

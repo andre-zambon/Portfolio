@@ -14,19 +14,25 @@
     margin-top: 1.5rem;
 }
 
-.container--ifes::before {
-    content: url(/assets/img/ifes-logo.svg);
+.formacao1::before {
+    /* content: url(/assets/img/ifes-logo.svg); */
     text-align: center;
     padding: 5rem 1rem
 }
 
-.container--unip {
-    content: url(/assets/img/unip-logo.png);
+.formacao2::before {
+    /* content: url(/assets/img/unip-logo.png); */
     text-align: center;
 }
 
-.container--alura::before {
-    content: url(/assets/img/logo-alura.svg);
+.formacao3::before {
+    /* content: url(/assets/img/logo-alura.svg); */
     text-align: center;
     padding: 6rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .formacao {
+        padding: 1rem 3rem;
+    }
 }
