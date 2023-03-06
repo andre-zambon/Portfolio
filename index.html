@@ -23,14 +23,16 @@
 <body>
     <header class="cabecalho">
         <p class="cabecalho__perfil">André Zambon</p>
-        <!-- <nav class="menu menu__mobile">
-            <a href="#sobre" class="menu__link">Sobre mim</a>
-            <a href="#skills" class="menu__link">Skills</a>
-            <a href="#hobbies" class="menu__link">Hobbies</a>
-            <a href="#formacao" class="menu__link">Formação</a>
-            <a href="#projetos" class="menu__link">Projetos</a>
-        </nav> -->
-        <p class="cabecalho__contato">andre-zambon@hotmail.com</p>
+        <div class="menu">
+            <nav class="menu__desktop">
+                <a href="#sobre" class="menu__link">Sobre mim</a>
+                <a href="#skills" class="menu__link">Skills</a>
+                <a href="#hobbies" class="menu__link">Hobbies</a>
+                <a href="#formacao" class="menu__link">Formação</a>
+                <a href="#experiencias" class="menu__link">Projetos</a>
+            </nav>
+            <p class="cabecalho__contato">andre-zambon@hotmail.com</p>
+        </div>
     </header>    
 
     <section class="apresentacao">
@@ -42,9 +44,9 @@
         </div>
     </section>
 
-    <section class="sobre">
+    <section class="sobre" id="sobre">
         <h2 class="titulo-secao titulo--alinhado">Sobre mim</h2>
-        <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        <p class="sobre__descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus.
             Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -53,7 +55,7 @@
             Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <h2 class="titulo-secao">Skills</h2>
 
         <ul class="skills__lista">
@@ -73,7 +75,7 @@
 
     </section>
 
-    <section class="hobbies">
+    <section class="hobbies" id="hobbies">
         <h2 class="titulo-secao">Hobbies</h2>
        
         <ul class="hobbies__lista">
@@ -93,7 +95,7 @@
 
     </section>
 
-    <section class="formacao">
+    <section class="formacao" id="formacao">
         <h2 class="titulo-secao">Formação acadêmica</h2>
         
         <!-- <div class="container container--ifes">
@@ -122,7 +124,7 @@
 
     </section>
 
-    <section class="experiencias">
+    <section class="experiencias" id="experiencias">
         <h2 class="titulo-secao">Experiência profissional</h2>
         <div class="container">
             <p class="rotulo">
@@ -147,11 +149,13 @@
     </section>
    
     <section class="contato">
+        <div class="contato-imagem"></div>
+        <div class="container-formulario">
         <h2 class="titulo-secao">Contato</h2>
-        <p class="rotulo rotulo--normal">Quer entrar em contato comigo?
-            Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
-        <form action="" class="contato__formulario">
-            <div class="container container--campo-rodape">
+           <p class="rotulo rotulo--normal">Quer entrar em contato comigo?
+               Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
+               <form action="" class="contato__formulario">
+                   <div class="container container--campo-rodape">
                 <label for="name" class="rotulo--input">Nome</label>
                 <input type="text" class="input--contato" id=name required>
             </div>
@@ -160,18 +164,18 @@
                 <label for="email" class="rotulo--input">E-mail</label>
                 <input type="email" class="input--contato" id="email" required>
             </div>
-
+            
             <div class="container container--campo-rodape">
                 <textarea id="assunto"class="input--contato" placeholder="Assunto" required></textarea>
             </div>
-
+            
             <div class="container container--campo-rodape">
                 <textarea id="mensagem" class="input--contato" placeholder="Mensagem" required></textarea>
             </div>
 
             <button type="submit" class="formulario__botao">Enviar Mensagem</button>
-
         </form>
+    </div>
     </section>
 
     <footer class="rodape">

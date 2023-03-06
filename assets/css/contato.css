@@ -55,4 +55,24 @@
     
 }
 
+@media screen and (min-width: 1140px) {
+    .contato {
+        padding: 2rem 10rem;
+        flex-direction: row;
+    }
+
+    .container-formulario {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .contato-imagem {
+        content: url(/assets/img/contato.svg);
+        display: block;
+        width: 50%;
+        padding-right: 1rem;
+    }
+    
+}
 

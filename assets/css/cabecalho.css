@@ -7,12 +7,17 @@
     padding: 1rem;
 }
 
+
 .cabecalho__perfil::before{
     content: url(/assets/img/logo.svg);
     margin-right: 5px;
     display: inline-block;
     width: 16%;
     vertical-align: sub;
+}
+
+.menu__desktop {
+    display: none;
 }
 
 .cabecalho__perfil {
@@ -36,4 +41,28 @@
     .cabecalho__contato {
         font-size: 1rem;
     }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .cabecalho {
+        padding: 2rem 10rem;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu__desktop {
+        display: flex;
+    }
+
+    .menu__link {
+        text-decoration: none;
+        color: var(--preto-descricao);
+        font-weight: 500;
+        font-size: 1rem;
+        margin-right: 2rem;
+    }
+    
 }

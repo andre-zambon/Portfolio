@@ -11,5 +11,9 @@
     }
 }
 
-
+@media screen and (min-width: 1440px) {
+    .sobre {
+        padding: 2rem 10rem;
+    }
+}
 

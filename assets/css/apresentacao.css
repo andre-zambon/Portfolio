@@ -50,4 +50,11 @@
     }
 }
 
+@media screen and (min-width: 1440px) {
+    .apresentacao {
+        padding: 2rem 10rem;
+    }
+    
+}
+
 

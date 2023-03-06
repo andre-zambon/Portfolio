@@ -48,6 +48,13 @@ body {
     line-height: 20px;
 }
 
+.sobre__descricao {
+    font-size: 0.875;
+    color: var(--preto-descricao);
+    margin-top: 1rem;
+    line-height: 20px;
+}
+
 @media screen and (min-width: 768px) {
     .titulo--alinhado {
         grid-column: 1;
@@ -58,9 +65,34 @@ body {
         grid-column: 1;
         grid-row: 2;
         text-align: justify;
+        font-size: 1rem;
     }
 
-
+    .sobre__descricao {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: justify;
+        font-size: 1rem;
+    }
 
 }
 
+@media screen and (min-width: 1440px) {
+    .titulo-secao {
+        font-size: 3.25rem;
+        line-height: 61px;
+    }
+
+    .descricao {
+        font-size: 1.37rem;
+        line-height: 26px;
+
+    }
+
+    .sobre__descricao {
+        font-size: 1.37rem;
+        line-height: 26px;
+        width: 75%;
+    }
+    
+}
