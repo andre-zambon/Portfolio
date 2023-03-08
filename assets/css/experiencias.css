@@ -5,11 +5,16 @@
 
 .container--cinza {
     background-color: var(--fundo-cinza);
+    margin-bottom: 3rem;
 }
 
 .container--botao {
     display: flex;
     flex-direction: row;
+}
+
+.experiencias__foto-desktop {
+    display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -22,4 +27,24 @@
     .experiencias {
         padding: 2rem 10rem;
     }
+
+    .experiencias__foto-desktop {
+        display: block;
+    }
+
+    .experiencias__foto-mobile {
+        display: none;
+    }
+
+    .container--cinza {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .experiencias__foto {
+        width: 70%;
+    }
+
+    
 }
