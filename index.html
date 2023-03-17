@@ -168,26 +168,27 @@
         <h2 class="titulo-secao">Contato</h2>
            <p class="rotulo rotulo--normal">Quer entrar em contato comigo?
                Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
-               <form action="" class="contato__formulario" id="formulario">
+               
+               <form action="https://formspree.io/f/meqwlzyd" method="post" class="contato__formulario" id="formulario">
                    <div class="container container--campo-rodape">
                 <label for="name" class="rotulo--input">Nome</label>
-                <input type="text" class="input--contato" id=name required>
+                <input name="nome" type="text" class=" input input--contato" id=name required>
             </div>
 
             <div class="container container--campo-rodape">
                 <label for="email" class="rotulo--input">E-mail</label>
-                <input type="email" class="input--contato" id="email" required>
+                <input name="email" type="email" class=" input input--contato" id="email" placeholder="seuemail@email.com.br" required>
             </div>
             
             <div class="container container--campo-rodape">
-                <textarea id="assunto" class="input--contato input-assunto--altura" placeholder="Assunto" required></textarea>
+                <textarea name="assunto" id="assunto" class="input input--contato input-assunto--altura" placeholder="Assunto" required></textarea>
             </div>
             
             <div class="container container--campo-rodape">
-                <textarea id="mensagem" class="input--contato input-mensagem--altura" placeholder="Mensagem" required></textarea>
+                <textarea name="mensagem" id="mensagem" class="input input--contato input-mensagem--altura" placeholder="Mensagem" required></textarea>
             </div>
 
-            <button type="submit" onclick="valida()" class="formulario__botao" id="botao-enviar">Enviar Mensagem</button>
+            <button type="submit" class="formulario__botao" id="botao-enviar">Enviar Mensagem</button>
         </form>
     </div>
     </section> 
@@ -199,4 +200,4 @@
 
     <script src="./assets/js/validacaoFormulario.js"></script>
 </body>
-</html>
+</html> 
