@@ -168,7 +168,7 @@
         <h2 class="titulo-secao">Contato</h2>
            <p class="rotulo rotulo--normal">Quer entrar em contato comigo?
                Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
-               <form action="" class="contato__formulario">
+               <form action="" class="contato__formulario" id="formulario">
                    <div class="container container--campo-rodape">
                 <label for="name" class="rotulo--input">Nome</label>
                 <input type="text" class="input--contato" id=name required>
@@ -180,21 +180,23 @@
             </div>
             
             <div class="container container--campo-rodape">
-                <textarea id="assunto"class="input--contato" placeholder="Assunto" required></textarea>
+                <textarea id="assunto" class="input--contato input-assunto--altura" placeholder="Assunto" required></textarea>
             </div>
             
             <div class="container container--campo-rodape">
-                <textarea id="mensagem" class="input--contato" placeholder="Mensagem" required></textarea>
+                <textarea id="mensagem" class="input--contato input-mensagem--altura" placeholder="Mensagem" required></textarea>
             </div>
 
-            <button type="submit" class="formulario__botao">Enviar Mensagem</button>
+            <button type="submit" onclick="valida()" class="formulario__botao" id="botao-enviar">Enviar Mensagem</button>
         </form>
     </div>
-    </section>
+    </section> 
 
     <footer class="rodape">
         <p class="texto-rodape">Desenvolvido por André Zambon</p>
         <p class="texto-rodape">2023</p>
     </footer>
+
+    <script src="./assets/js/validacaoFormulario.js"></script>
 </body>
 </html>
