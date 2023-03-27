@@ -1,39 +1,32 @@
+//Ação do botao
 
-// validacao do nome
-    
-// nome.maxLength = 51
-const nome = document.getElementById('name');
-function valida (){
-    if (nome.value == ' ') {
-        nome.setCustomValidity('O campo deve ser preenchido');
-        console.log('teste')
+const botao = document.getElementById('botao-enviar')
+botao.addEventListener('click', valida)
+
+
+//Limita quantidade de caracteres
+const nome = document.getElementById('name')
+nome.maxLength = 51
+
+const assunto = document.getElementById('assunto')
+assunto.maxLength = 51
+
+//Verifica se os campos foram preenchidos
+const listaInput = document.getElementsByClassName('input')
+function validaInput(){
+    let mensagem = ''
+
+    for (let i = 0; i < listaInput.length; i++) {
+        const input = listaInput[i];
+
+        if (input.value == ''){
+            mensagem = 'Este campo deve ser preenchido'
+        }
+        
+        input.setCustomValidity(mensagem)
     }
 }
 
-valida()
-
-// const botaoEnviar = document.getElementById('botao-enviar');
-// botaoEnviar.addEventListener("click", () => {
-//     formulario.submit();
-// });
-
-
-
-
-
-// //validacao do email
-
-// const email = document.getElementById('email')
-// email.setCustomValidity('O campo deve ser preenchido')
-
-// //validacao do assunto
-
-// const assunto = document.getElementById('assunto')
-
-// nome.maxLength = 51
-// assunto.setCustomValidity('O campo deve ser preenchido')
-
-// //validacao da mensagem
-// nome.maxLength = 300
-// const mensagem = document.getElementById('mensagem')
-// mensagem.setCustomValidity('O campo deve ser preenchido')    
+function valida () {
+    validaInput()
+}
