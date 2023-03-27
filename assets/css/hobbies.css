@@ -21,9 +21,10 @@
     padding-left: 1rem;
 }
 
-/* .rotulo-trabalhos-manuais {
-    content: ;
-} */
+.rotulo-fotografia::before {
+    content: url(/assets/img/camera.svg);
+    margin-bottom: 1rem;
+}
 
 .rotulo-ouvir-musica::before {
     content: url(/assets/img/fone.svg);
@@ -35,9 +36,6 @@
     margin-bottom: 1rem;
 }
 
-/* .rotulo-jardinagem {
-    content: ;
-} */
 
 @media screen and (min-width: 768px) {
     .hobbies {
